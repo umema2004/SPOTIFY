@@ -1,4 +1,6 @@
 # Project Description
+Our project aims to develop a recommendation system akin to Spotify's, leveraging Apache Spark and Kafka for data processing and real-time streaming. By harnessing the power of big data technologies, we seek to provide users with personalized music recommendations based on their preferences
+
 ## Phase 1: Extract, Transform, Load (ETL) Pipeline
 
 ### Data Sources:
