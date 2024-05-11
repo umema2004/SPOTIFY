@@ -55,21 +55,21 @@ In this phase, we focused on building the recommendation model for our system. H
 - **Spark MLlib**: Used for machine learning tasks such as feature transformation and clustering.
 - **Apache Kafka**: Facilitated real-time data streaming and efficient data distribution.
 
-### Phase 3: Deployment
+## Phase 3: Deployment
 
 In Phase 3, our focus shifted towards deploying our recommendation system and providing a user-friendly interface. Here's what we accomplished:
 
 #### Consumer Setup:
 - Developed a consumer that reads the contents of the Kafka topics.
 
-#### Web Application Development:
+### Web Application Development:
 - Created a web application using Flask.
 - The web application displays the first few songs of each topic to the user.
 
-#### User Interaction:
+### User Interaction:
 - Implemented functionality for users to select their preferred topic.
 - Upon selection, the web application displays all songs within the chosen topic.
 
-#### Tools Used:
+### Tools Used:
 - **Flask**: Used for developing the web application and handling user interactions.
 - **Apache Kafka**: Continued usage for real-time data streaming and communication between components.
