@@ -26,3 +26,31 @@ Our project aims to develop a recommendation system akin to Spotify's, leveragin
 - **Python Libraries**: `pandas`, `os`, and `librosa` were pivotal in processing CSV metadata, navigating directories, and extracting audio features, respectively.
 - **Apache Kafka**: Facilitated real-time data streaming, enabling seamless communication between the producer and consumer components.
 - **MongoDB**: Served as the database backend, providing storage for our processed data.
+
+## Phase 2: Music Recommendation Model
+
+In this phase, we focused on building the recommendation model for our system. Here's a breakdown of what we achieved:
+
+### Producer Setup:
+- Loaded the data we saved in MongoDB.
+- Sent the data to a consumer component for further processing.
+
+### Schema Definition:
+- Defined a schema to upload the data into a Spark DataFrame.
+
+### Model Development:
+- Utilized the Spark MLlib library for model development.
+- Implemented a Vector Assembler to prepare the features.
+- Employed K-means clustering to group similar audio features.
+
+### Data Distribution:
+- Distributed our data into multiple Kafka topics for efficient processing.
+
+### Kafka Integration:
+- Included a producer in the same script to upload data into these Kafka topics seamlessly.
+
+### Tools Used:
+- **Apache Spark**: Leveraged for distributed computing and model development.
+- **MongoDB**: Initial data source for training the recommendation model.
+- **Spark MLlib**: Used for machine learning tasks such as feature transformation and clustering.
+- **Apache Kafka**: Facilitated real-time data streaming and efficient data distribution.
