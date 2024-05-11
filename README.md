@@ -59,7 +59,7 @@ In this phase, we focused on building the recommendation model for our system. H
 
 In Phase 3, our focus shifted towards deploying our recommendation system and providing a user-friendly interface. Here's what we accomplished:
 
-#### Consumer Setup:
+### Consumer Setup:
 - Developed a consumer that reads the contents of the Kafka topics.
 
 ### Web Application Development:
