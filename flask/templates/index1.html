@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Selection</title>
+</head>
+<body>
+    <h1>Choose a Song</h1>
+    <form action="/select_song" method="post">
+        <ul>
+            {% for song in songs %}
+            <li><input type="radio" name="song_number" value="{{ song[0] }}"> {{ song[1] }} - {{ song[2] }}</li>
+            {% endfor %}
+        </ul>
+        <input type="submit" value="Select">
+    </form>
+</body>
+</html>
