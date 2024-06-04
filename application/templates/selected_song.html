@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selected Songs</title>
+</head>
+<body>
+    <h1>Songs from Selected Topic</h1>
+    <ul>
+        {% for song in songs %}
+        <li>{{ song[1] }} - {{ song[2] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
