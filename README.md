@@ -1,3 +1,5 @@
+The application folder contains a sample output for the model as a flask applicatio. Download the folder and run app1.py to see :D
+
 # Project Description
 Our project aims to develop a recommendation system akin to Spotify's, leveraging Apache Spark and Kafka for data processing and real-time streaming. By harnessing the power of big data technologies, we seek to provide users with personalized music recommendations based on their preferences
 
@@ -34,6 +36,9 @@ In this phase, we focused on building the recommendation model for our system. H
 ### Producer Setup:
 - Loaded the data we saved in MongoDB.
 - Sent the data to a consumer component for further processing.
+- There were 2 algorithms being used to achieve the recommendation model:
+- 1- K-MEANS CLUSTERING: the entire dataset is divided into K clusters (depending on size of sample and size of bands/buckets). Songs in the same cluster are recommendations for each other.
+- 2- COLLABORATIVE FILTERING: The clusters from K-Means are then filtered more to obtain more 'clusters within clusters'. This gives the most popular songs which will be displayed on the main homepage of the SPOTIFY application. 
 
 ### Schema Definition:
 - Defined a schema to upload the data into a Spark DataFrame.
@@ -61,6 +66,8 @@ In Phase 3, our focus shifted towards deploying our recommendation system and pr
 
 ### Consumer Setup:
 - Developed a consumer that reads the contents of the Kafka topics.
+- The consumer gives songs arranged in text files, and one file which contains the most popular songs (obtained by collaborative filtering)
+- The most popular songs are shown on the main SPOTIFY homepage, and which ever song is selected, the relevent recommendation are fetched and displayed from its relevent text file and relevent section in text file.
 
 ### Web Application Development:
 - Created a web application using Flask.
